@@ -20,3 +20,31 @@ insert into PETRESCUE values
 	(9,'Dog',2,222.22,'2018-06-15')
 	
 ;
+
+
+
+select *
+from PETRESCUE;
+
+
+select sum(COST) as SUM_COST
+from PETRESCUE;
+
+select avg(QUANTITY) 
+from PETRESCUE;
+
+select ROUND(COST) from PETRESCUE;
+
+
+select ANIMAL,length(ANIMAL) from PETRESCUE;
+
+select UCASE(ANIMAL) from PETRESCUE;
+
+select DISTINCT(ANIMAL) from PETRESCUE;
+
+select Month(RESCUEDATE) as R_month,RESCUEDATE
+from PETRESCUE;
+
+select (CURRENT DATE - RESCUEDATE) from PETRESCUE;
+
+select (RESCUEDATE + 3 DAYS) from PETRESCUE;
